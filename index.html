@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Nature Basket</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="resetstylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+    <body>
+        <header>
+            <nav class="navbar" >
+                 <ul>
+                    <li id="menubar"><a id="home" href="index.html"></a></li>
+                    <li id="userlogin"><a id="login" href="#"></a></li>
+                    <li id="location"><a id="loc" href="#"></a></li>
+                    <li id="cart"><a id="cartcount" href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="carousel" id="sliderwindow" style="display:block;">
+            <ul class="panel_window">
+                    <li><img class="corousal_image" src="Images/bb1.jpg" alt=""></li>
+                    <li><img class="corousal_image" src="Images/bb2.jpg" alt=""></li>
+                    <li><img class="corousal_image" src="Images/bb3.jpg" alt=""></li>
+                    <li><img class="corousal_image" src="Images/bb4.jpg" alt=""></li>
+                    <li><img class="corousal_image" src="Images/bb5.jpg" alt=""></li>
+                </ul>
+        </div>
+        <div id="customerinfo"></div>
+         <div class="mycart" id="cartlist" style="display:none;">
+                <button id="clearcart" style="display:none;">Clear Cart</button>
+                <button id="placeorder" class="orderbtn" style="display:none;">Place Order</button>
+        </div>
+        <div id="gratitude"></div>
+        <div id="errormsg"></div>
+<!--==========================================Fruits Section======================================================================================-->
+        <div class="fruits_option" id="fruits_section" style="display:none;">
+            <div class="sectionheading">
+                    <h2>Fresh Fruits</h2>
+            </div>
+            <div class="commonwindow">
+                <img src="Images/apple.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_1">Apple</lable>
+                    <p> Rs.<span id='price_1' >60 </span><span> For 6pcs</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_1'/>
+                            <input type='text' readonly id='quantity_1' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_1'/>
+                    </div>
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_1" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_1" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/banana.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_2">Banana</lable>
+                     <p> Rs.<span id='price_2'>60 </span><span> For 6pcs</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_2'/>
+                            <input type='text' readonly  id='quantity_2' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_2'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_2" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_2" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+
+             <div class="commonwindow">
+                <img src="Images/mango.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_3">Mangoes</lable>
+                    <p> Rs.<span id='price_3'>150 </span><span> For 6pcs</span></p>
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_3'/>
+                            <input type='text' readonly id='quantity_3' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_3'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_3" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_3" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/orange.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_4">Oranges</lable>
+                     <p> Rs.<span id='price_4'>120 </span><span> For 6pcs</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_4'/>
+                            <input type='text' id='quantity_4' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_4'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                <button type="submit" class="addbutton" id="buttonAdd_4" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_4" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+             </section>
+            </div>
+            
+        </div>
+
+<!--==========================================Vegetables Section===================================================================================-->
+
+        <div class="vegetables_option" id="vegetables_section" style="display:none;">
+            <div class="sectionheading">
+                    <h2>Fresh Vegetables</h2>
+            </div>
+            <div class="commonwindow">
+                <img src="Images/onions.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_5">Onions</lable>
+                    <p> Rs.<span id='price_5'>25 </span><span> For 1kg</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_5'/>
+                            <input type='text' readonly id='quantity_5' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_5'/>
+                    </div>
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_5" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_5" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/potato.png" alt="">
+                <section class="info">
+
+                    <lable id="name_6">Potatoes</lable>
+                    <p> Rs.<span id='price_6'>20 </span><span> For 1kg</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_6'/>
+                            <input type='text' readonly  id='quantity_6' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_6'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_6" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_6" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+
+            
+             <div class="commonwindow">
+                <img src="Images/capsicum.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_9">Capsicum</lable>
+                    <p> Rs.<span id='price_9'>30 </span><span> For 500gms</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_9'/>
+                            <input type='text' id='quantity_9' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_9'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                <button type="submit" class="addbutton" id="buttonAdd_9" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_9" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+             </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/brinjal.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_10">Brinjal</lable>
+                    <p> Rs.<span id='price_10'>25 </span><span> For 500gms</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_10'/>
+                            <input type='text' id='quantity_10' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_10'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                <button type="submit" class="addbutton" id="buttonAdd_10" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_10" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+             </section>
+            </div>
+            
+        </div>
+
+
+<!--==========================================Dairy Section===================================================================================-->
+
+      <div class="dairy_option" id="dairy_section" style="display:none;">
+            <div class="sectionheading">
+                    <h2>Dairy Products</h2>
+            </div>
+            <div class="commonwindow">
+                <img src="Images/bread.png" alt="">
+                <section class="info">
+
+                    <lable id="name_11">Wheat Bread</lable>
+                    <p> Rs.<span id='price_11'>35 </span><span> For 450gms</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_11'/>
+                            <input type='text' readonly id='quantity_11' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_11'/>
+                    </div>
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_11" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_11" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/butter.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_12">Amul Butter</lable>
+                   <p> Rs.<span id='price_12'>90 </span><span> For 120gms</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_12'/>
+                            <input type='text' readonly  id='quantity_12' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_12'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_12" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_12" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+
+             <div class="commonwindow">
+                <img src="Images/eggs.jpeg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_13">Eggs</lable>
+                    <p> Rs.<span id='price_13'>50 </span><span> For 6pcs</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_13'/>
+                            <input type='text' readonly id='quantity_13' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_13'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_13" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_13" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/milkmaid.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_14">MilkMade</lable>
+                    <p> Rs.<span id='price_14'>120 </span><span> For 400gms</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_14'/>
+                            <input type='text' id='quantity_14' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_14'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                <button type="submit" class="addbutton" id="buttonAdd_14" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_14" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+             </section>
+            </div>
+            
+        </div>
+
+<!--==========================================Grocery and Staples Section===================================================================================-->
+
+      <div class="grocery_option" id="grocery_section" style="display:none;">
+            <div class="sectionheading">
+                    <h2>Grocery Products</h2>
+            </div>
+            <div class="commonwindow">
+                <img src="Images/oil.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_15">Groundnut Oil</lable>
+                   <p> Rs.<span id='price_15'>98 </span><span> For 1ltr</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_15'/>
+                            <input type='text' readonly id='quantity_15' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_15'/>
+                    </div>
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_15" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_15" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/sugar.jpg" alt="">
+                <section class="info">
+
+                    <lable id="name_16">Sugar</lable>
+                    <p> Rs.<span id='price_16'>40 </span><span> For 1kg</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_16'/>
+                            <input type='text' readonly  id='quantity_16' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_16'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_16" style="display:block;" value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_16" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+
+             <div class="commonwindow">
+                <img src="Images/aata.png" alt=""> 
+                <section class="info">
+
+                    <lable id="name_17">Aata/WheatFlour</lable>
+                    <p> Rs.<span id='price_17'>170 </span><span> For 5kg</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_17'/>
+                            <input type='text' readonly id='quantity_17' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_17'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                    <button type="submit" class="addbutton" id="buttonAdd_17" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_17" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+                </section>
+            </div>
+             <div class="commonwindow">
+                <img src="Images/rice.jpg" alt=""> 
+                <section class="info">
+
+                    <lable id="name_18">Basmati Rice</lable>
+                    <p> Rs.<span id='price_18'>85 </span><span> For 1kg</span></p>
+
+                    <div class='additems'>
+                            <input type='button' value='-' id='minus_18'/>
+                            <input type='text' id='quantity_18' value='0' class='qty' />
+                            <input type='button' value='+' id='plus_18'/>
+                    </div>
+
+                </section>
+                <section class="cartops">
+                <button type="submit" class="addbutton" id="buttonAdd_18" style="display:block;"value="Add to Cart">Add to Cart</button>
+                    <button type="submit" class="rmvbutton" id="buttonRemove_18" style="display:none;" value="Remove from Cart">Remove From Cart</button>
+             </section>
+            </div>
+            
+        </div>
+
+<!--========================================Shop By Category Section==============================================================================================-->
+        <div id="categories" style="display:block;"> 
+            <div class="vegnfruits">
+                <a href="#">
+                <img src="Images/fruits_veg.jpg" alt="">
+                </a>
+            </div>
+            <div class="midbody">
+                <div class="midbodyheading">
+                    <h2>Shop By Category</h2>
+                </div>
+                <div class="shoppingwindows">
+                        <section class="midcommon">
+                            <a href="#" id="fruits_link">
+                            <img src="Images/Fruits.jpg" alt="">
+                            </a>
+                            <div class="imagetitle">Fresh Fruits</div>
+                        </section>
+
+                        <section class="midcommon">
+                            <a href="#" id="vegetables_link">
+                            <img src="Images/Vegetables.jpg" alt="">
+                            </a>
+                            <div class="imagetitle">Fresh Vegetables</div>
+                        </section>
+
+                        <section class="midcommon">
+                            <a href="#" id="dairy_link">
+                            <img src="Images/dairy.jpg" alt="">
+                            </a>
+                            <div class="imagetitle">Bread & Dairy</div>
+                        </section>
+
+                        <section class="midcommon">
+                            <a href="#" id="grocery_link">
+                            <img src="Images/grocery.png" alt=""> 
+                            </a>
+                            <div class="imagetitle">Grocerys & Staples</div>
+                        </section>
+                 </div>
+             </div>
+        </div>
+<!--===============================User Regestration Form======================================================================================-->
+        <div class="body_wrap" id="cartlogin" style="display:none;">
+            <div class="userlinks">
+                <p class="alignright">
+                  <a class="toplogin_link" href="#">LOGIN</a>
+                  <a class="topsignup_link" href="#">SIGN UP</a>
+                </p>
+            </div>
+            <div class="clear"></div>
+<!--===============================Login Form======================================================================================-->
+            <div class="login" id="div1">
+                <h3>Log in to your account</h3>
+                <div class="loginsection_left">
+                    <p>Just one click to start</p>
+                    <div class="medialinks">
+                        <a class="facebook mediacommon">
+                            <span class="fbicon"></span>
+                            <span class="fbtext">Login with facebook</span>
+                        </a>
+                        <a class="googleplus mediacommon">
+                            <span class="googleicon"></span>
+                            <span class="googletext">Login with Google</span>
+                        </a>
+                    </div>
+                        <p class="or">
+                            <span>OR</span>
+                        </p>
+                    <div class="loginform">
+                        <div class="emailfield">
+                            <label>User ID</label>
+                            <input type="text" name="username" id="loguid" placeholder="Enter your registered User ID">
+                        </div>
+
+                        <div class="passwordfield">
+                            <label>Password</label>
+                            <input type="password" name="password" id="logpass" placeholder="Enter Password">
+                        </div>
+                        <div id="loginerrormsg">
+                        </div>
+                        <button type="submit" class="loginbutton" id="logIn" value="LOG IN" name="Submit">LOGIN</button>
+                        <div class="clearfix"></div>
+
+                        <div class="loginfooter">
+                            <p class="noaccount">New to bigbasket?</p>
+                            <a class="signup_click" href="#"> Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+                        <div class="loginsection_right">
+                            <h3 class="rightheading">You will love to shop with us.</h3>
+                            <p>- Wide selection of products.</p>
+                            <p>- Quality and service you'll love.</p>
+                            <p>- On time delivery guarantee.</p>
+                            <p>- Shop on the go from Android and iOS devices.</p>
+                        </div>
+                        <div class="clear"></div>
+                </div>
+
+<!--===============================SignUp Form======================================================================================-->
+            <div class="signup" id="div2" style="display:none;">
+                <h3>Sign Up on bigbasket</h3>
+                <p class="signupheading">Just one click to start</p>
+                  <div class="medialinks">
+                        <a class="facebook mediacommon">
+                            <span class="fbicon"></span>
+                            <span class="fbtext">Login with facebook</span>
+                        </a>
+                        <a class="googleplus mediacommon">
+                            <span class="googleicon"></span>
+                            <span class="googletext">Login with Google</span>
+                        </a>
+                  </div>
+                        <p class="orsignup"><span>OR</span></p>
+
+                  <div class="signinform">
+                        <div class="name">
+                            <label>Name</label>
+                                <span class="fullname">
+                                    <span class="fname"><input id="firstname" type="text" placeholder="First Name"></span>
+                                    <span class="lname"><input id="lastname" type="text" placeholder="Last Name"></span>
+                                </span>
+                        </div>
+                        <div class="useridfield">
+                            <label>User ID</label>
+                            <input type="text" id='uid' name="username" placeholder="Enter your User ID">
+                        </div>
+
+                        <div class="passwordfield">
+                            <label>Password</label>
+                            <input type="password" id="pwd" placeholder="Enter Password">
+                        </div>
+
+                        <div class="confirmpassword">
+                            <label>Confirm Password</label>
+                            <input type="password" id="cnfpwd" placeholder="Confirm Password">
+                        </div>
+                        <div id="errormessage">
+
+                        </div>
+                        <button type="submit" class="signup_button" value="SIGN UP">SIGN UP</button>
+                        <div class="clearfix"></div>
+
+                        <div class="signupfooter">
+                            <p class="noaccount">Already a member?</p>
+                            <a class="newlogin" href="#"> Login</a>
+                        </div>
+                 </div>
+            </div>
+        </div>
+
+
+    
+    <script type="text/javascript" src="script.js" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    </body>  
+
+</html>

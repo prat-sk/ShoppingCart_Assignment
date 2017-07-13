@@ -1,0 +1,951 @@
+ @media only screen and (min-width: 320px) 
+ {
+        .navbar ul {
+            list-style: none;
+            background-color: #84c225;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar ul li {
+            line-height: 40px;
+            height: 45px;
+            display: inline-block;
+            width: 22%;
+        }
+        .navbar li a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            color: #000;
+            padding-top: 28px;
+        }
+
+        #menubar{
+             background-image: url('Images/homeicon.png');
+             background-position: 22px 4px;
+             background-repeat: no-repeat;
+            
+        }
+        #userlogin{
+             background-image: url('Images/userlogin_icon.png');
+             background-position: 20px 3px;
+             background-repeat: no-repeat;
+        }
+        #location{
+            background-image: url('Images/location_icon.png');
+            background-position: 20px 4px;
+            background-repeat: no-repeat;
+        }
+        #cart{
+             background-image: url('Images/cart_icon.png');
+             background-position: 21px 5px;
+             background-repeat: no-repeat;
+        }
+
+        .carousel{
+            overflow:hidden;
+            width: 100%;
+            padding: 0px;
+        }
+        .panel_window{
+            list-style:none;
+            position:relative;
+            width:500%; 
+            overflow: hidden; 
+            -moz-animation:carousel 30s infinite;
+            -webkit-animation:carousel 30s infinite;
+            animation:carousel 30s infinite;
+            padding: 0;
+        }
+        .panel_window li{
+            position:relative;
+            float:left;
+            width:20%; 
+        }
+        .carousel img{
+            display:block;
+            width: 100%;
+            max-width:100%;
+            overflow: hidden;
+            padding: 0;
+            margin: 0
+        }
+            @keyframes carousel{
+            0%    { left:0; }
+            11%   { left:0; }
+            12.5% { left:-100%; }
+            23.5% { left:-100%; }
+            25%   { left:-200%; }
+            36%   { left:-200%; }
+            37.5% { left:-300%; }
+            48.5% { left:-300%; }
+            50%   { left:-400%; }
+            61%   { left:-400%; }
+            62.5% { left:-300%; }
+            73.5% { left:-300%; }
+            75%   { left:-200%; }
+            86%   { left:-200%; }
+            87.5% { left:-100%; }
+            98.5% { left:-100%; }
+            100%  { left:0; }
+        }
+        .clearfix{
+            clear: both;
+            display: table;
+            content: "";
+        }
+        .vegnfruits img{
+            display:block;
+            width: 100%;
+            max-width:100%;
+            overflow: hidden;
+        }
+
+        .midbody{
+            width: 100%;
+        }
+        .shoppingwindows{
+            margin-top: 10px;
+        }
+        .midbodyheading{
+            position: relative;
+            min-height: 25px;
+            border-bottom: 1px solid  #D1D1D1;
+        }
+        .midbodyheading h2,.sectionheading h2{
+            color: #808080;
+            font-size: 20px;
+            text-align: center;
+            font-style: Ubuntu;
+            text-align: center;
+            font-weight: normal;
+            border-top: 1px solid  #D1D1D1;
+        }
+        .sectionheading h2{
+            border-bottom: 1px solid  #D1D1D1;
+        }
+        .midbodyheading:after{
+             clear: both;
+             display: table;
+             content: "";
+        }
+        .imagetitle{
+            font-style: Ubuntu;
+            font-size: 14px;
+            color: rgb(30, 30, 30);
+            text-align: center;
+            background-color: rgb(225, 225, 225);
+        }
+        .midcommon{
+            float: left;
+            width: 45%;
+            margin: 5px;
+            box-shadow: 0 0 0 1px #e1e1e1;
+            border-radius: 5px;
+        }
+        .midcommon a{
+            display: block;
+            width: 100%;
+        }
+        .midcommon img{
+            display:block;
+            width: 100%;
+            max-width:100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .midcommon:after{
+             clear: both;
+             display: table;
+             content: "";
+        }
+        .midcommon:hover{
+            box-shadow: 0 0 6px #808080;
+        }
+       
+        .qty {
+            width: 22px;
+        }
+         .commonwindow{
+            float: left;
+            display: inline-block;
+            width: 46%;
+            margin: 5px;
+            box-shadow: 0 0 0 2px #e1e1e1;
+            border-radius: 5px;
+        }
+
+        .commonwindow img{
+            display:block;
+            width: 100%;
+            max-width:100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .info lable, .info p {
+            font-size: 14px;
+            line-height: 24px;
+            width: 100%;
+            font-family: Lato,sans-serif;
+            font-weight: 400;
+            color: #58595b;
+        }
+        .additems{
+            margin-left: 14px;
+        }
+        .info{
+            text-align: center;
+        }
+        .info p{
+            margin-left:0px;
+        }
+        .priceinfo{
+            font-size: 14px;
+            line-height: 24px;
+            font-family: Lato,sans-serif;
+            font-weight: 400;
+            color: #58595b;
+
+        }
+        .addbutton{
+             box-shadow: 4px 4px 4px #ccc;
+            float: left;
+            font-family: roboto slab;
+            font-size: 14px;
+            color: #ffffff;
+            padding: 5px 20px;
+            background: #84c225;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        } 
+        .rmvbutton{
+            box-shadow: 4px 4px 4px #ccc;
+            float: left;
+            font-family: roboto slab;
+            font-size: 13px;
+            color: #ffffff;
+            padding: 5px 10px;
+            background: #e50000;
+            border-radius: 10px;
+            margin-left: 7px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 7px;
+        } 
+       
+        #errormsg {
+            color: #e50000;
+            font-family: roboto slab;
+            font-size: 14px;
+            text-align: center;
+        }
+       
+/*========================================login form stylesheet=====================================================*/
+
+    a{
+        text-decoration: none;
+    }
+    .body_wrap{
+        width: auto;
+        margin: 0 auto;
+        clear: both;
+        padding-bottom: 40px;
+    }
+    .clear{
+        clear:both;
+        display: table;
+        content:"";
+    }
+    .userlinks{
+        padding: 22px 0;
+    }
+    .alignright{
+        float: right;
+        margin: 0;
+    }
+    .userlinks p a{
+        text-decoration: none;
+        padding: 0 10px;
+        font-family: Roboto,sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        color: #58595b;
+    }
+    .toplogin_link{
+        cursor: pointer;
+        border-right: 2px solid #dfdfdf; 
+    }
+    .topsignup_link{
+        cursor: pointer;
+    }
+    .login:after{
+        clear:both;
+        display: table;
+        content:"";
+    }
+    .login{
+        margin-top: 15px;
+        padding: 25px 20px 60px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,.3);
+        margin-bottom: 18px;
+    }
+    .signup{
+        margin-top: 15px;
+        padding: 25px 20px 60px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,.3);
+        margin-bottom: 18px;
+    }
+    .login h3, .signup h3{
+        font-family: Roboto,sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #58595b;
+        margin: 0;
+    }
+
+    .loginsection_left{
+        float: left;
+        padding-right: 15px;
+        /*width: 375px;*/
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+    .loginsection_left p{
+        font-family: lato;
+        color: #58595b;
+        font-size: 15px;
+    }
+    .medialinks{
+        display: table;
+        margin: 0px 0px;
+        width: auto;
+    }
+    .facebook{
+        background: #3c66c4;
+        margin: 10px 20px 0 0;
+        float: left;
+    }
+    .googleplus{
+        background: #cf4332;
+        margin-top: 10px;
+        float: left;
+    }
+    .mediacommon{
+        /*width: 85%;*/
+        width: 100%;
+        position: relative;
+        text-align: center;
+        color: #fff;
+        font-family: roboto_slabregular;
+        height: 45px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .fbicon{
+        background-image: url(Images/social_media.jpg);
+        background-repeat: no-repeat;
+        background-position: -55px -68px;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+    }
+    .fbtext{
+        font-size: 12px;
+        font-family: roboto;
+        font-weight: 400;
+    }
+    .googletext{
+        font-size: 14px;
+        padding-top: 6px;
+        font-family: roboto;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    .googleicon{
+        background-image: url(Images/social_media.jpg);
+        background-repeat: no-repeat;
+        background-position: -134px -68px;
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+    }
+    .or{
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        margin: 33px 0;
+        line-height: normal;
+        margin-top: 14px;
+        width: 100%;
+    }
+    .medialinks::after{
+        clear: both;
+        display: table;
+        content: "";
+    }
+    .orsignup{
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        margin: 33px 0;
+        line-height: normal;
+        margin-top: 14px;
+    }
+    .or span{
+        color: #58595b;
+        border: 1px solid #ccc;
+        padding: 8px;
+        background: #fff;
+        font-size: 12px;
+        border-radius: 50%;
+        margin-left: 119px;
+    }
+    .orsignup span{
+        color: #58595b;
+        border: 1px solid #ccc;
+        left: 45%;
+        padding: 8px;
+        background: #fff;
+        font-size: 12px;
+        border-radius: 50%;
+        /*margin-left: 333px;*/
+        margin-left: 110px;
+    }
+    .loginform{
+            display: inline-block;
+            margin-bottom: 15px;
+            /*width: 70%;*/
+            width: 100%;
+            position: relative;
+    }
+    .loginform label{
+        float: left;
+        font-size: 14px;
+        /* line-height: 24px; */
+        /* width: 74px; */
+        font-family: Lato,sans-serif;
+        font-weight: 400;
+        color: #58595b;
+    }
+    .loginform input{
+        border: 1px solid #ccc;
+        box-shadow: none;
+        float: left;
+        height: 30px;
+        text-indent: 5px;
+        /*width: 89%;*/
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 38px;
+        font-size: 12px;
+        color: #000000;
+        font-family: lato;
+    }
+    .loginsection_right{
+        /*width: 330px;*/
+        width: 100%;
+        float: left;
+        /*padding-left: 16px;
+        padding-top: 25px;*/
+        /*border-left: 1px solid #eaeaea;*/
+    }
+    .loginsection_right p{
+        font-family: lato;
+        color: #58595b;
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 30px;
+    }
+    .useridfield{
+        margin-bottom: 40px;
+    }
+    .loginbutton{
+        box-shadow: 4px 4px 3px #ccc;
+        float: left;
+        margin: 10px 0 0 0%;
+        padding: 5px 26px 5px 35px;
+        font-family: roboto slab;
+        font-size: 19px;
+        color: #777261;
+        cursor: pointer;
+        background: #fee67c;
+    }
+    .clearfix{
+        clear: both;
+        display: block;
+        content: "";
+    }
+    .loginfooter{
+        margin-top: 30px;
+        margin-left:21%;
+    }
+    .noaccount{
+        line-height: normal;
+        display: inline;
+        color: #636363;
+        font-family: Roboto,sans-serif;
+        font-size: 13px;
+        margin-right: 4px;
+        font-weight: 500;
+    }
+    .signup_click{
+        color: #0000fe;
+        font-family: Roboto,sans-serif;
+        font-size: 13px;
+        position: relative;
+        bottom: 4px;
+        text-decoration: none;
+        vertical-align: sub;
+    }
+     .signinform label{
+        float: left;
+        font-size: 14px;
+        line-height: 24px;
+        /*width: 80px;*/
+        width: 100%;
+        font-family: Lato,sans-serif;
+        font-weight: 400;
+        color: #58595b;
+    }
+    .name{
+        display: inline-block;
+        margin-bottom: 15px;
+        width: 100%;
+        position: relative;
+    }
+    .name input{
+        border: 1px solid #ccc;
+        box-shadow: none;
+        float: left;
+        height: 30px;
+        text-indent: 5px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #000000;
+        font-family: lato;
+        /*width:130px;*/
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .useridfield input{
+        border: 1px solid #ccc;
+        box-shadow: none;
+        float: left;
+        height: 30px;
+        text-indent: 5px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #000000;
+        font-family: lato;
+        /*width:260px;*/
+        width: 100%;
+
+    }
+    .confirmpassword input{
+        border: 1px solid #ccc;
+        box-shadow: none;
+        float: left;
+        height: 30px;
+        text-indent: 5px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #000000;
+        font-family: lato;
+        /*width:260px;*/
+        width: 100%;
+
+    }
+    .passwordfield{
+        margin-bottom: 15px;
+    }
+    .passwordfield:after{
+        clear: both;
+        display: table;
+        content: "";
+    }
+     .confirmpassword:after{
+        clear: both;
+        display: table;
+        content: "";
+    }
+    .passwordfield input{
+        border: 1px solid #ccc;
+        box-shadow: none;
+        float: left;
+        height: 30px;
+        text-indent: 5px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #000000;
+        font-family: lato;
+        /*width: 232px;*/
+        width: 100%;
+    }
+    #errormessage{
+        color: red;
+        font-size: 12px;
+        margin-left: 11%;
+        font-family: lato;
+    }
+   .signup_button{
+        box-shadow: 4px 4px 3px #ccc;
+        float: left;
+        margin: 25px 0 0 0%;
+        padding: 5px 26px 5px 35px;
+        font-family: roboto slab;
+        font-size: 19px;
+        color: #777261;
+        cursor: pointer;
+        background: #fee67c;
+    }
+    .signup_button:after{
+        clear: both;
+        display: table;
+        content: "";
+    }
+    .signupfooter{
+        margin-top: 30px;
+        margin-left: 11%;
+    }
+    .signupheading{
+        font-family: lato;
+        color: #58595b;
+        font-size: 15px;
+    }
+    #loginerrormsg {
+            color: #e50000;
+            font-family: roboto slab;
+            font-size: 14px;
+            text-align: center;
+        }
+    #errormessage {
+            color: #e50000;
+            font-family: roboto slab;
+            font-size: 14px;
+        }
+    #customerinfo{
+        margin-top:10px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-style: italic;
+        color: #e50000;
+        margin-bottom: 10px
+
+    }
+    #gratitude{
+         margin-top:10px;
+         font-family: Ubuntu;
+         font-size: 35px;
+         font-style: italic;
+         color: #84c225;
+         margin-bottom: 10px;
+         text-align: center;
+    }
+
+     .mycart table{
+        font-style: Ubuntu;
+        border: 1px solid black;
+        border-collapse: collapse;
+        align:center;
+
+    }
+    .mycart th, .mycart td{
+        padding: 5px;
+        text-align: center;
+        font-size: 12px;
+    }
+    #clearcart{
+        margin-left:77px;
+        margin-top: 15px;
+        box-shadow: 4px 4px 3px #ccc;
+        padding: 5px;
+        font-family: roboto slab;
+        font-size: 12px;
+        border-radius: 25px;
+        color: #ffffff;
+        background: #FF0000;
+    }
+    #placeorder{
+        font-size: 12px;
+        color: #ffffff;
+        background:#007f00;
+        box-shadow: 4px 4px 3px #ccc;
+        padding: 5px;
+        font-family: roboto slab;
+        margin-left: 15px;
+        border-radius: 25px;
+    }
+    #gratitude{
+        font-size: 25px;
+    }
+    .mycart th{
+        background-color: #fb9514;
+        color: #ffffff;
+    }
+     .mycart tr{
+         background-color: #84c225
+     }
+     .logoutbtn{
+        background: #FF0000;
+        color: #ffffff;
+        font-size: 18px; 
+        margin-top: 20px;
+        margin-left: 117px;
+     }
+ }
+
+    @media only screen and (min-width: 768px)
+{
+        .midbodyheading h2{
+            font-size: 35px;
+        }
+        .sectionheading h2{
+                font-size: 35px;
+            }
+        .midcommon{
+                width: 46%;
+                margin: 12px;
+            }
+        .imagetitle{
+                font-size: 25px;
+            }
+        .info p{
+            font-size: 22px;
+            margin-top: 15px;
+        }
+        .info lable{
+            font-size: 22px;
+        }
+         .addbutton {
+            font-size: 25px;
+            margin-left: 110px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+          .rmvbutton{
+            font-size: 25px;
+            margin-left: 91px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .commonwindow {
+            width: 48%;
+            margin: 7px;
+        }
+         #errormsg{
+            font-size: 25px;
+        }
+         #customerinfo{
+              font-size: 27px;
+         }
+          .loginsection_left{
+           width: 325px;
+       }
+       #cartlist th, #cartlist td{
+        padding: 6px;
+        text-align: center;
+        font-size: 25px;
+    }
+     #cartlist th{
+        background-color: #fb9514;
+        color: #ffffff;
+    }
+     #cartlist tr:nth-child(odd){
+        background-color: #84c225;;
+        color: #ffffff;
+    }
+       .loginsection_right{
+            width: 330px;
+            padding-left: 16px;
+            padding-top: 25px;
+            border-left: 1px solid #eaeaea;
+       }
+         .signinform label{
+            width: 80px;
+        }
+        #clearcart{
+            margin-left: 275px;
+            font-size: 20px;
+        }
+        #placeorder{
+            font-size: 20px;
+        }
+        .name{
+            margin-bottom: 0;
+        }
+        .name input{
+            width: 150px;
+        }
+        .useridfield input{
+            width: 302px;
+        }
+        .passwordfield input {
+            width: 302px;
+        }
+        .confirmpassword input {
+            width: 302px;
+        }
+         .signup_button{
+           margin: 25px 0 0 11%;
+       }
+       .orsignup span {
+           margin-left: 345px;
+       }
+} 
+
+    @media only screen and (min-width: 1200px) 
+    {
+        .body_wrap{
+            width: 780px;
+        }
+        .midcommon{
+            width: 24%;
+            margin: 6px;
+        }
+        .imagetitle{
+            font-size: 30px;
+        }
+        .midbodyheading h2{
+            font-size: 35px;
+        }
+        .commonwindow{
+            width: 23%;
+            margin: 12px;
+        }
+         #errormsg{
+            font-size: 25px;
+        }
+         #customerinfo{
+              font-size: 27px;
+              text-align: center;
+         }
+         .info p{
+            font-size: 22px;
+            margin-top: 15px;
+        }
+        .info lable{
+            font-size: 22px;
+        }
+        .addbutton {
+            font-size: 22px;
+            margin-left: 77px;
+            margin-bottom: 10px;
+        }
+          .rmvbutton{
+            font-size: 22px;
+            margin-left: 57px;
+            margin-bottom: 10px;
+        }
+        .commonwindow img {
+            margin-bottom: 12px;
+        }
+        .sectionheading h2{
+             font-size: 35px;
+        }
+        .orsignup span{
+            margin-left: 350px;
+        }
+        .signinform label{
+            width: 80px;
+        }
+        .name{
+            margin-bottom: 0;
+        }
+        .name input{
+            width: 150px;
+        }
+        .useridfield input{
+            width: 302px;
+        }
+        .passwordfield input {
+            width: 302px;
+        }
+        .confirmpassword input {
+            width: 302px;
+        }
+       .medialinks{
+           width: 100%;
+       }
+       .mediacommon{
+           width: 46%;
+       }
+       .or span {
+           margin-left: 133px;
+       }
+       .loginform input{
+           width: 302px;
+       }
+       .loginsection_left{
+           width: 375px;
+       }
+       .loginsection_right{
+            width: 330px;
+            padding-left: 16px;
+            padding-top: 25px;
+            border-left: 1px solid #eaeaea;
+       }
+       .loginform label{
+           line-height: 24px;
+            width: 71px;
+       }
+       .loginbutton{
+           margin: 10px 0 0 19%;
+       }
+       .signup_button{
+           margin: 25px 0 0 11%;
+       }
+        #cartlist table{
+        font-style: Ubuntu;
+        border: 1px solid black;
+        border-collapse: collapse;
+        align:center;
+
+    }
+    #cartlist th, #cartlist td{
+        font-style: Ubuntu;
+        padding: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+    #clearcart{
+        margin-left: 500px;
+        margin-top: 15px;
+        box-shadow: 4px 4px 3px #ccc;
+        padding: 5px 26px 5px 35px;
+        font-family: roboto slab;
+        font-size: 20px;
+        border-radius: 25px;
+        color: #ffffff;
+        background: #FF0000
+    }
+    .logoutbtn{
+        margin-left:590px;
+        font-size: 27px;
+    }
+    #placeorder{
+        font-size: 20px;
+        color: #ffffff;
+        background: #007f00;
+        box-shadow: 4px 4px 3px #ccc;
+        padding: 5px 26px 5px 35px;
+        font-family: roboto slab;
+        margin-left: 20px;
+        border-radius: 25px;
+    }
+    #cartlist th{
+        background-color: #fb9514;
+        color: #ffffff;
+    }
+     #cartlist tr:nth-child(odd){
+        background-color: #84c225;;
+        color: #ffffff;
+    }
+}
+
